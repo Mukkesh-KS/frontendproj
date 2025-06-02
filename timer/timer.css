@@ -1,0 +1,75 @@
+*{
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(114, 106, 106);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 50px;
+    flex-direction: column;
+    
+
+}
+
+#stopwatch{
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+#timerDisplay{
+    font-size: 50px;
+    font-weight: bold;
+}
+button{
+font-size: 20px;
+
+color: black;
+border: none;
+padding: 12px 24px;
+}
+#start{
+    background-color: green;
+    cursor: pointer;
+}
+#start:hover{
+    background-color: hsl(120, 100%, 35%);
+    cursor: pointer;
+}
+#start:active{
+    background-color:  hsl(120, 100%, 45%);
+    cursor: pointer;
+}
+
+#stop{
+    background-color: red;
+    cursor: pointer;
+}
+#stop:hover{
+    background-color: hsl(0, 100%, 60%);
+    cursor: pointer;
+}
+#stop:active{
+    background-color: hwb(0 40% 0%);
+    cursor: pointer;
+}
+
+#reset{
+    background-color: hsl(261, 100%, 50%);
+    cursor: pointer;
+}
+#reset:hover{
+    background-color: hsl(261, 100%, 60%);
+    cursor: pointer;
+}
+
+#reset:active{
+    background-color: hsl(261, 100%, 70%);
+    cursor: pointer;
+}
+

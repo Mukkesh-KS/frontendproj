@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<script defer src="calc.js"></script>
+
+<body>
+    <div class="container">
+        <form onsubmit="return false;"> <!-- Prevent form submission -->
+            <input type="text"  id="display" readonly>
+            <div class="keys">
+                <button type="button" onclick="appendToDisp('+')" class="operators">+</button>
+                <button type="button" onclick="appendToDisp('7')">7</button>
+                <button type="button" onclick="appendToDisp('8')">8</button>
+                <button type="button" onclick="appendToDisp('9')">9</button>
+                <button type="button" onclick="appendToDisp('-')" class="operators">-</button>
+                <button type="button" onclick="appendToDisp('4')">4</button>
+                <button type="button" onclick="appendToDisp('5')">5</button>
+                <button type="button" onclick="appendToDisp('6')">6</button>
+                <button type="button" onclick="appendToDisp('*')" class="operators">*</button>
+                <button type="button" onclick="appendToDisp('1')">1</button>
+                <button type="button" onclick="appendToDisp('2')">2</button>
+                <button type="button" onclick="appendToDisp('3')">3</button>
+                <button type="button" onclick="appendToDisp('/')" class="operators">/</button>
+                <button type="button" onclick="appendToDisp('0')">0</button>
+                <button type="button" onclick="appendToDisp('.')">.</button>
+                <button type="button" onclick="clr()">C</button>
+                <button type="button" onclick="calculate()" class="operators">=</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

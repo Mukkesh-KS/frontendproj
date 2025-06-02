@@ -1,0 +1,121 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 320px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.container label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"],
+.container input[type="tel"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container button {
+  width: 48%;
+  padding: 10px;
+  margin: 10px 1% 0 1%;
+  border: none;
+  border-radius: 4px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #2563eb;
+}
+
+#message {
+  margin-top: 15px;
+  font-weight: bold;
+  min-height: 20px;
+}
+
+/* Popup overlay styling */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  min-width: 320px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Popup input fields */
+.popup-content input[type="text"],
+.popup-content input[type="password"],
+.popup-content input[type="email"],
+.popup-content input[type="tel"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Popup buttons */
+.popup-content button {
+  width: 48%;
+  padding: 10px;
+  margin: 10px 1% 0 1%;
+  border: none;
+  border-radius: 5px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #2563eb;
+}

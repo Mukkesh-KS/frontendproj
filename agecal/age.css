@@ -1,0 +1,16 @@
+.container {
+  display: flex; /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  height: 100vh;             /* Full height of the viewport */
+  flex-direction: column;    /* Stack items vertically */
+}
+
+input{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    width: 100%;
+}
+button{
+      margin: 10px 20px; /* centers horizontally */
+
+}

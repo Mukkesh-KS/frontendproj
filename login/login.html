@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Login / Signup</h2>
+
+    <label for="userid">User ID</label>
+    <input type="text" id="userid" placeholder="Enter user ID" />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter password" />
+
+    <button id="loginbtn">Login</button>
+    <button id="signupbtn">Signup</button>
+
+    <p id="message"></p>
+  </div>
+
+  <!-- Signup Popup -->
+  <div class="popup" id="signupPopup">
+    <div class="popup-content">
+      <h3>Signup</h3>
+      <input type="text" id="name" placeholder="Enter Name" />
+      <input type="email" id="email" placeholder="Enter Email" />
+      <input type="tel" id="phone" placeholder="Enter Phone Number" />
+      <input type="text" id="popupUserId" placeholder="Choose User ID" />
+      <input type="password" id="popupPassword" placeholder="Choose Password" />
+      <button id="nextbtn">Next</button>
+      <button id="closeSignupBtn" type="button">Close</button>
+    </div>
+  </div>
+
+  <!-- OTP Popup -->
+  <div class="popup" id="otpPopup">
+    <div class="popup-content">
+      <h3>Enter OTP</h3>
+      <input type="text" id="otpInput" placeholder="Enter OTP" />
+      <button id="verifyOtpBtn">Verify OTP</button>
+      <button id="closeOtpBtn" type="button">Close</button>
+    </div>
+  </div>
+  
+
+  <script src="login.js"></script>
+</body>
+</html>
